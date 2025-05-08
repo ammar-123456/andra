@@ -16,7 +16,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4 text-accent">WAS Redovisningskonsulter</h3>
             <p className="mb-2">Dackevägen 33 177 34, JÄRFÄLLA</p>
             <p className="mb-2">Telefon: 08-277444</p>
-            {/* <p className="mb-2">Mobil: 0707-603139</p> Removed old numbers */}
+            <p className="mb-2">Corporate registratio number: 800809-0774</p>
             <p className="mb-2">
               E-post: <a href="mailto:info@wasredovisningskonsulter.se" className="text-accent hover:underline">info@wasredovisningskonsulter.se</a>
             </p>
