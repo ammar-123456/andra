@@ -97,7 +97,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         )}
         {product.category === 'Ekonomisk radgivning' && (
           <Image 
-            src="/images/financial_consulting_product_7.jpeg" 
+            src="/images/financial_consulting_product_1.jpg" 
             alt={product.name} 
             fill
             style={{ objectFit: 'cover' }}

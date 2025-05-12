@@ -233,7 +233,7 @@ export default function CheckoutPage() {
                                 )}
                                 {item.product.category === 'Ekonomisk radgivning' && (
                                   <Image 
-                                    src="/images/financial_consulting_product_7.jpeg" 
+                                    src="/images/financial_consulting_product_1.jpg" 
                                     alt={item.product.name} 
                                     width={40}
                                     height={40}
@@ -479,7 +479,7 @@ export default function CheckoutPage() {
                       </label>
                     </div>
                     
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                       <input
                         type="radio"
                         id="swish"
@@ -492,7 +492,7 @@ export default function CheckoutPage() {
                       <label htmlFor="swish" className="ml-3 block text-sm font-medium text-gray-700">
                         Swish
                       </label>
-                    </div>
+                    </div> */}
                     
                     <div className="flex items-center">
                       <input
@@ -559,7 +559,7 @@ export default function CheckoutPage() {
                   </div>
                 )}
                 
-                {formData.paymentMethod === 'swish' && (
+                {/* {formData.paymentMethod === 'swish' && (
                   <div>
                     <label htmlFor="swishNumber" className="block text-sm font-medium text-gray-700 mb-1">Swish-nummer *</label>
                     <input
@@ -573,7 +573,7 @@ export default function CheckoutPage() {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                     />
                   </div>
-                )}
+                )} */}
                 
                 {formData.paymentMethod === 'klarna' && (
                   <div className="bg-gray-50 p-4 rounded-md">
@@ -679,7 +679,7 @@ export default function CheckoutPage() {
                   <p className="text-sm text-gray-500">Betalningsmetod</p>
                   <p className="font-medium">
                     {formData.paymentMethod === 'card' && 'Betalkort (Visa/Mastercard)'}
-                    {formData.paymentMethod === 'swish' && 'Swish'}
+                    {/* {formData.paymentMethod === 'swish' && 'Swish'} */}
                     {formData.paymentMethod === 'klarna' && 'Klarna'}
                   </p>
                 </div>
@@ -693,9 +693,36 @@ export default function CheckoutPage() {
                       <div key={item.product.id} className="flex justify-between items-center">
                         <div className="flex items-center">
                           <div className="flex-shrink-0 h-10 w-10 bg-gray-200 rounded-md flex items-center justify-center">
-                            {item.product.category === 'bokforing' && (
+                            {item.product.category === 'bokforing 1 taxibil' && (
                               <Image 
-                                src="/images/accounting_papers.jpeg" 
+                                src="/images/images.jpg" 
+                                alt={item.product.name} 
+                                width={40}
+                                height={40}
+                                className="rounded-md"
+                              />
+                            )}
+                            {item.product.category === 'bokforing 1 Taxibil AB' && (
+                              <Image 
+                                src="/images/financial_consulting_product_8.webp" 
+                                alt={item.product.name} 
+                                width={40}
+                                height={40}
+                                className="rounded-md"
+                              />
+                            )}
+                            {item.product.category === 'bokforing alla verksamhet 1 tim' && (
+                              <Image 
+                                src="/images/accounting_laptop.webp" 
+                                alt={item.product.name} 
+                                width={40}
+                                height={40}
+                                className="rounded-md"
+                              />
+                            )}
+                            {item.product.category === 'bokforing ytligare en Taxibilar' && (
+                              <Image 
+                                src="/images/accounting_financial_report.webp" 
                                 alt={item.product.name} 
                                 width={40}
                                 height={40}
@@ -704,7 +731,16 @@ export default function CheckoutPage() {
                             )}
                             {item.product.category === 'loneadministration' && (
                               <Image 
-                                src="/images/accounting_calculator_white.jpeg" 
+                                src="/images/accounting_professionals.jpeg" 
+                                alt={item.product.name} 
+                                width={40}
+                                height={40}
+                                className="rounded-md"
+                              />
+                            )}
+                            {item.product.category === 'arsredovisning Aktiebolag' && (
+                              <Image 
+                                src="/images/JPEG-fil.webp" 
                                 alt={item.product.name} 
                                 width={40}
                                 height={40}
@@ -713,25 +749,34 @@ export default function CheckoutPage() {
                             )}
                             {item.product.category === 'arsredovisning' && (
                               <Image 
-                                src="/images/accounting_money.jpeg" 
+                                src="/images/financial_consulting_product_3.jpeg" 
                                 alt={item.product.name} 
                                 width={40}
                                 height={40}
                                 className="rounded-md"
                               />
                             )}
-                            {item.product.category === 'deklaration' && (
+                            {item.product.category === 'deklaration Enskild Firma' && (
                               <Image 
-                                src="/images/accounting_calculator_yellow.jpeg" 
+                                src="/images/produkt_bild.jpg" 
                                 alt={item.product.name} 
                                 width={40}
                                 height={40}
                                 className="rounded-md"
                               />
                             )}
-                            {item.product.category === 'radgivning' && (
+                            {item.product.category === 'deklaration Aktiebolag' && (
                               <Image 
                                 src="/images/accounting_desk.jpeg" 
+                                alt={item.product.name} 
+                                width={40}
+                                height={40}
+                                className="rounded-md"
+                              />
+                            )}
+                            {item.product.category === 'Ekonomisk radgivning' && (
+                              <Image 
+                                src="/images/financial_consulting_product_1.jpg" 
                                 alt={item.product.name} 
                                 width={40}
                                 height={40}
