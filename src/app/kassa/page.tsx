@@ -794,6 +794,25 @@ export default function CheckoutPage() {
                     );
                   })}
                 </div>
+
+
+                <div className="mt-4 bg-gray-50 p-4 rounded-md border border-gray-200">
+  <div className="flex items-center mb-2">
+    <Image 
+      src="/images/visa_logo.png" 
+      alt="WAS Redovisningskonsulter" 
+      width={24} 
+      height={24}
+      className="mr-2"
+    />
+    <h3 className="font-semibold">Betalning till WAS Redovisningskonsulter</h3>
+  </div>
+  <p className="text-sm text-gray-600">
+    Din betalning hanteras säkert och går direkt till WAS Redovisningskonsulter.
+    Org.nr: 800809-0774.
+  </p>
+</div>
+
                 
                 <div className="border-t border-gray-200 pt-4">
                   <div className="flex justify-between font-bold text-lg">
