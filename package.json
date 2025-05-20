@@ -69,6 +69,7 @@
     "@cloudflare/next-on-pages": "^1.12.1",
     "@cloudflare/workers-types": "^4.20240620.0",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
